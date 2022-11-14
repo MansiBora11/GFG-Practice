@@ -15,3 +15,5 @@ class Solution
         return pq.top();
     }
 };
+
+TC: 0(NlogK)

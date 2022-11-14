@@ -4,7 +4,7 @@ class Solution
     //Function to return kth largest element from an array.
     int KthLargest(int arr[], int n, int k) {
         // Your code here
-        priority_queue<int,vector<int>,greater<int>>pq(arr,arr+k);
+        priority_queue<int,vector<int>,greater<int>>pq(arr,arr+k); //Using min heap
         
         for(int i=k;i<n;i++){
             if(arr[i]>pq.top()){
